@@ -1,0 +1,162 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/chebi_v2024-02-01>
+
+void:classes 7;
+void:classPartition [ 
+void:class <http://www.w3.org/2002/07/owl#Axiom>; 
+void:triples 580521;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Class>; 
+void:triples 217368;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Restriction>; 
+void:triples 91781;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#AnnotationProperty>; 
+void:triples 37;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#ObjectProperty>; 
+void:triples 10;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#TransitiveProperty>; 
+void:triples 2;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Ontology>; 
+void:triples 1;
+];
+void:entities  217435;
+void:distinctSubjects  217416;
+void:distinctObjects  153390;
+void:properties 39;
+void:propertyPartition [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 889720;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasDbXref>; 
+void:triples 757797;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#annotatedTarget>; 
+void:triples 580521;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#annotatedProperty>; 
+void:triples 580521;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#annotatedSource>; 
+void:triples 580521;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subClassOf>; 
+void:triples 367790;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>; 
+void:triples 247210;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 198813;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>; 
+void:triples 198798;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#id>; 
+void:triples 198798;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#inSubset>; 
+void:triples 198719;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#source>; 
+void:triples 198702;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/formula>; 
+void:triples 187755;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/charge>; 
+void:triples 186974;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/mass>; 
+void:triples 186172;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/monoisotopicmass>; 
+void:triples 186109;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/smiles>; 
+void:triples 184858;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/inchikey>; 
+void:triples 175447;
+],[ 
+void:property <http://purl.obolibrary.org/obo/chebi/inchi>; 
+void:triples 175447;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>; 
+void:triples 132052;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasSynonymType>; 
+void:triples 125696;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#onProperty>; 
+void:triples 91781;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#someValuesFrom>; 
+void:triples 91781;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000115>; 
+void:triples 53448;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#deprecated>; 
+void:triples 18649;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>; 
+void:triples 18580;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0100001>; 
+void:triples 18580;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000231>; 
+void:triples 18580;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#is_cyclic>; 
+void:triples 10;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#is_transitive>; 
+void:triples 8;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#comment>; 
+void:triples 8;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>; 
+void:triples 6;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#shorthand>; 
+void:triples 2;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#date>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#inverseOf>; 
+void:triples 1;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>; 
+void:triples 1;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#saved-by>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#versionIRI>; 
+void:triples 1;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#default-namespace>; 
+void:triples 1;
+];
+void:triples 6860047;
+void:vocabulary  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://purl.obolibrary.org/obo/chebi#1>, <http://www.w3.org/2002/07/owl#>, <http://purl.obolibrary.org/obo/chebi#2>, <http://www.geneontology.org/formats/oboInOwl#>, <http://purl.obolibrary.org/obo/>, <http://purl.obolibrary.org/obo/chebi#>, <http://purl.obolibrary.org/obo/chebi/230/>, <http://purl.obolibrary.org/obo/chebi/>, <http://purl.obolibrary.org/obo/chebi#3>, <http://www.w3.org/2000/01/rdf-schema#>;
+a void:Dataset .

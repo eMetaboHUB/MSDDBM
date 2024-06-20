@@ -1,0 +1,36 @@
+#!/bin/bash
+# This script submits the API Main class as a Spark Job
+# Created to test the API Spark functions or use them from Airflow
+
+MSDQHOME=/usr/local/msd-database-management
+VERSION=$(<$MSDQHOME/version)
+USAGE='Expecting at least one argument: "void" or "enhanceVoid" or "toParquet" etc...'
+if [ "$#" -lt 1 ]
+then
+  echo $USAGE >&2
+  exit 1
+fi
+
+#case $1 in
+#    void|enhanceVoid)
+#        ;;
+#    *)
+#        # Wrong first argument.
+#        echo $USAGE >&2
+#        exit 1
+#esac
+
+spark-submit  \
+              --deploy-mode cluster \
+              --driver-memory 4G \
+              --executor-memory 12G \
+              --num-executors 48 \
+              --conf spark.yarn.submit.waitAppCompletion="true" \
+              --jars /usr/share/java/sansa-stack-spark_2.12-0.8.4_ExDistAD.jar \
+              --conf spark.yarn.appMasterEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/" \
+              --conf spark.executorEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/"  \
+              --files $MSDQHOME/msdQuery.conf \
+              --class "fr.inrae.msd.Main" \
+              $MSDQHOME/lib/msddbm-assembly-$VERSION.jar  "$@" -c msdQuery.conf
+
+

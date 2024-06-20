@@ -1,0 +1,623 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/chembl_v33.0>
+
+void:classes 112;
+void:classPartition [ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Activity>; 
+void:triples 20334684;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000251>; 
+void:triples 4623337;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000195>; 
+void:triples 2814878;
+],[ 
+void:class <http://xmlns.com/foaf/0.1/Image>; 
+void:triples 2399743;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000216>; 
+void:triples 2376273;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000042>; 
+void:triples 2376273;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000350>; 
+void:triples 2376270;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000218>; 
+void:triples 2376270;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000018>; 
+void:triples 2372674;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000059>; 
+void:triples 2372674;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000113>; 
+void:triples 2372665;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000254>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000315>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000244>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000307>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000245>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000431>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000312>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000381>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000300>; 
+void:triples 2311814;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000322>; 
+void:triples 2311523;
+],[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000326>; 
+void:triples 2291056;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PubchemRef>; 
+void:triples 2208232;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SmallMolecule>; 
+void:triples 1920643;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Assay>; 
+void:triples 1610596;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ZincRef>; 
+void:triples 1257453;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#MolportRef>; 
+void:triples 551134;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SureChemblRef>; 
+void:triples 542626;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#MculeRef>; 
+void:triples 497907;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#EmoleculesRef>; 
+void:triples 471393;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#UnknownSubstance>; 
+void:triples 454737;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PubchemThomPharmRef>; 
+void:triples 443367;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#NikkajiRef>; 
+void:triples 217679;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#GoProcessRef>; 
+void:triples 144961;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Document>; 
+void:triples 88629;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#GoFunctionRef>; 
+void:triples 78063;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinDataBankRef>; 
+void:triples 74603;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ActorRef>; 
+void:triples 66599;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#GoComponentRef>; 
+void:triples 65058;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#InterproRef>; 
+void:triples 60726;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#DrugIndication>; 
+void:triples 51582;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#NmrShiftDb2Ref>; 
+void:triples 41436;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ChebiRef>; 
+void:triples 35493;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#FdaSrsRef>; 
+void:triples 32844;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ReactomeRef>; 
+void:triples 32447;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinMolecule>; 
+void:triples 22751;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PfamRef>; 
+void:triples 20232;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PdbeRef>; 
+void:triples 17038;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#LincsRef>; 
+void:triples 16777;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#HmdbRef>; 
+void:triples 12156;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#TargetComponent>; 
+void:triples 11062;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#UniprotRef>; 
+void:triples 10994;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SingleProtein>; 
+void:triples 9092;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#DrugbankRef>; 
+void:triples 8397;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Mechanism>; 
+void:triples 7098;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#EnzymeClassRef>; 
+void:triples 6952;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#KeggLigandRef>; 
+void:triples 6920;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#IupharRef>; 
+void:triples 6886;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#IntactRef>; 
+void:triples 6771;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#WikipediaMolRef>; 
+void:triples 4752;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#BindingSite>; 
+void:triples 4549;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PubchemDotfRef>; 
+void:triples 3895;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PubchemBioassayRef>; 
+void:triples 2999;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PharmgkbRef>; 
+void:triples 2747;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Organism>; 
+void:triples 2327;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#CellLine>; 
+void:triples 2021;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#CellLineTarget>; 
+void:triples 1885;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SelleckRef>; 
+void:triples 1726;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#PharmGkbRef>; 
+void:triples 1460;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Antibody>; 
+void:triples 1033;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#BioComponent>; 
+void:triples 944;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinClassification>; 
+void:triples 829;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#CGDRef>; 
+void:triples 727;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#AtlasRef>; 
+void:triples 640;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#LincsCellRef>; 
+void:triples 637;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinComplex>; 
+void:triples 570;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinFamily>; 
+void:triples 406;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinProteinInteraction>; 
+void:triples 383;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ReconRef>; 
+void:triples 302;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Tissue>; 
+void:triples 294;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Journal>; 
+void:triples 224;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Oligonucleotide>; 
+void:triples 201;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Class>; 
+void:triples 138;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Enzyme>; 
+void:triples 121;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#TimbalRef>; 
+void:triples 119;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinSelectivityGroup>; 
+void:triples 117;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#UnclassifiedMolecule>; 
+void:triples 107;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#NucleicAcid>; 
+void:triples 95;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Oligosaccharide>; 
+void:triples 95;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ProteinComplexGroup>; 
+void:triples 59;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Source>; 
+void:triples 59;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#CellTherapy>; 
+void:triples 55;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#DatatypeProperty>; 
+void:triples 49;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SmallMoleculeTarget>; 
+void:triples 41;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#ObjectProperty>; 
+void:triples 41;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#ChimericProtein>; 
+void:triples 22;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#UnknownTarget>; 
+void:triples 20;
+],[ 
+void:class <http://rdfs.org/ns/void#Dataset>; 
+void:triples 19;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#Macromolecule>; 
+void:triples 18;
+],[ 
+void:class <http://rdf.ebi.ac.uk/terms/chembl#SubCellular>; 
+void:triples 16;
+];
+void:entities  83078274;
+void:distinctSubjects  82971075;
+void:distinctObjects  83078003;
+void:properties 155;
+void:propertyPartition [ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 83375351;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 83352787;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasActivity>; 
+void:triples 61004052;
+],[ 
+void:property <http://semanticscience.org/resource/SIO_000300>; 
+void:triples 49470219;
+],[ 
+void:property <http://semanticscience.org/resource/SIO_000008>; 
+void:triples 49470219;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasAssay>; 
+void:triples 25166472;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasDocument>; 
+void:triples 25023633;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#chemblId>; 
+void:triples 24527418;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasMolecule>; 
+void:triples 23384062;
+],[ 
+void:property <http://www.bioassayontology.org/bao#BAO_0000208>; 
+void:triples 20334684;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#standardType>; 
+void:triples 20334684;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#type>; 
+void:triples 20334684;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#standardValue>; 
+void:triples 18818643;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#value>; 
+void:triples 18818643;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#standardUnits>; 
+void:triples 18077058;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasUnitOnto>; 
+void:triples 17622648;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasQUDT>; 
+void:triples 17468137;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#units>; 
+void:triples 15078494;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#relation>; 
+void:triples 13040294;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#standardRelation>; 
+void:triples 13037254;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#activityComment>; 
+void:triples 10135818;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#moleculeXref>; 
+void:triples 6447112;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#pChembl>; 
+void:triples 4037920;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#taxonomy>; 
+void:triples 2937114;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#altLabel>; 
+void:triples 2785029;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#prefLabel>; 
+void:triples 2400784;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#substanceType>; 
+void:triples 2399743;
+],[ 
+void:property <http://xmlns.com/foaf/0.1/depiction>; 
+void:triples 2399743;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasTarget>; 
+void:triples 1635855;
+],[ 
+void:property <http://purl.org/dc/terms/description>; 
+void:triples 1624944;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetConfDesc>; 
+void:triples 1610596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayType>; 
+void:triples 1610596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasSource>; 
+void:triples 1610596;
+],[ 
+void:property <http://www.bioassayontology.org/bao#BAO_0000205>; 
+void:triples 1610596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetRelType>; 
+void:triples 1610596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetRelDesc>; 
+void:triples 1610596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#organismName>; 
+void:triples 1474530;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetConfScore>; 
+void:triples 1340874;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayCellType>; 
+void:triples 524942;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetCmptXref>; 
+void:triples 504400;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasCellLine>; 
+void:triples 458021;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#isCellLineForAssay>; 
+void:triples 458021;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#dataValidityComment>; 
+void:triples 317973;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#dataValidityIssue>; 
+void:triples 317973;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayStrain>; 
+void:triples 293278;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayTissue>; 
+void:triples 194825;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#potentialDuplicate>; 
+void:triples 121167;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasChildMolecule>; 
+void:triples 114314;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasParentMolecule>; 
+void:triples 114314;
+],[ 
+void:property <http://purl.org/dc/terms/title>; 
+void:triples 104122;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayTestType>; 
+void:triples 96303;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasJournal>; 
+void:triples 88629;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#documentType>; 
+void:triples 88629;
+],[ 
+void:property <http://purl.org/dc/terms/date>; 
+void:triples 88425;
+],[ 
+void:property <http://purl.org/ontology/bibo/doi>; 
+void:triples 85753;
+],[ 
+void:property <http://purl.org/ontology/bibo/pageStart>; 
+void:triples 85639;
+],[ 
+void:property <http://purl.org/ontology/bibo/pageEnd>; 
+void:triples 85630;
+],[ 
+void:property <http://purl.org/ontology/bibo/volume>; 
+void:triples 85538;
+],[ 
+void:property <http://purl.org/ontology/bibo/pmid>; 
+void:triples 80293;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasProteinClassification>; 
+void:triples 79975;
+],[ 
+void:property <http://purl.org/ontology/bibo/issue>; 
+void:triples 77000;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#highestDevelopmentPhase>; 
+void:triples 69431;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasEFO>; 
+void:triples 52130;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasMeshHeading>; 
+void:triples 51582;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasDrugIndication>; 
+void:triples 51582;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasMesh>; 
+void:triples 51582;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasEFOName>; 
+void:triples 51481;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#exactMatch>; 
+void:triples 47837;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasTargetDescendant>; 
+void:triples 41266;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasTargetComponentDescendant>; 
+void:triples 38709;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#relOverlapsWith>; 
+void:triples 35078;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assaySubCellFrac>; 
+void:triples 34170;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#isBiotherapeutic>; 
+void:triples 23047;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#helmNotation>; 
+void:triples 22138;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#targetType>; 
+void:triples 15398;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasTargetComponent>; 
+void:triples 14082;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#componentType>; 
+void:triples 12006;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#proteinSequence>; 
+void:triples 11941;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasMechanism>; 
+void:triples 7098;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#mechanismDescription>; 
+void:triples 7096;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#isTargetForMechanism>; 
+void:triples 6628;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#mechanismActionType>; 
+void:triples 6627;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#relatedMatch>; 
+void:triples 4941;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasBindingSite>; 
+void:triples 4792;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#atcClassification>; 
+void:triples 4580;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#bindingSiteName>; 
+void:triples 4549;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#relSubsetOf>; 
+void:triples 3894;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#relHasSubset>; 
+void:triples 3887;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayXref>; 
+void:triples 2999;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#assayCategory>; 
+void:triples 2999;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#isTargetForCellLine>; 
+void:triples 1770;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#isCellLineForTarget>; 
+void:triples 1770;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#cellosaurusId>; 
+void:triples 1596;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasBioComponent>; 
+void:triples 974;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subClassOf>; 
+void:triples 950;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#hasCLO>; 
+void:triples 938;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#classLevel>; 
+void:triples 829;
+],[ 
+void:property <http://rdf.ebi.ac.uk/terms/chembl#classPath>; 
+void:triples 829;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#broader>; 
+void:triples 828;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#narrower>; 
+void:triples 828;
+];
+void:vocabulary  <http://pubchem.ncbi.nlm.nih.gov/compound/2378317>, <https://www.emolecules.com/cgi-bin/more?vid=36977864>, <http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL4748844#>, <http://pubchem.ncbi.nlm.nih.gov/compound/118721599>, <http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL1908353#>, <http://pubchem.ncbi.nlm.nih.gov/compound/137635868>, <http://pubchem.ncbi.nlm.nih.gov/compound/373118>, <http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL1520407#>, <http://pubchem.ncbi.nlm.nih.gov/compound/6603266>, <http://pubchem.ncbi.nlm.nih.gov/compound/89920395>, <http://pubchem.ncbi.nlm.nih.gov/compound/2083396>, <http://pubchem.ncbi.nlm.nih.gov/compound/72935144>, <http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL4983702#>, <https://www.emolecules.com/cgi-bin/more?vid=1030433>, <http://pubchem.ncbi.nlm.nih.gov/substance/24699583>;
+a void:Dataset .

@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/pubchem_inchikey_v2023-12-09>
+
+void:classes 1;
+void:classPartition [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000399>; 
+void:triples 115769787;
+];
+void:entities  231901054;
+void:distinctSubjects  115780324;
+void:distinctObjects  116120726;
+void:properties 4;
+void:propertyPartition [ 
+void:property <http://semanticscience.org/resource/SIO_000011>; 
+void:triples 116110188;
+],[ 
+void:property <http://semanticscience.org/resource/SIO_000300>; 
+void:triples 115769787;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 115769787;
+],[ 
+void:property <http://purl.org/dc/terms/subject>; 
+void:triples 10537;
+];
+void:vocabulary  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://purl.org/dc/terms/>, <http://semanticscience.org/resource/>, <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/>, <http://rdf.ncbi.nlm.nih.gov/pubchem/inichikey/>, <http://id.nlm.nih.gov/mesh/>, <http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey/>;
+a void:Dataset .

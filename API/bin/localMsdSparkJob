@@ -1,0 +1,46 @@
+#!/bin/bash
+# This script submits the API Main class as a Spark Job
+# Created to test the API Spark functions
+
+MSDQHOME=/usr/local/msd-database-management
+VERSION=$(<$MSDQHOME/version)
+USAGE='Expecting at least one argument: "scanGraphs" or "sparqlRequest" or "void" or "qa"'
+if [ "$#" -lt 1 ]
+then
+  echo $USAGE >&2
+  exit 1
+fi
+
+case $1 in
+    scanGraphs|sparqlRequest|void|qa)
+        ;;
+    *)
+        # The wrong first argument.
+        echo $USAGE >&2
+        exit 1
+esac
+
+#TODO Update and compile Sansa 0.9.0 - solve dep pbms before...
+spark-submit  \
+              --deploy-mode client \
+              --conf spark.yarn.submit.waitAppCompletion="true" \
+              --files $MSDQHOME/msdQuery2.conf \
+              --jars /usr/share/java/sansa-stack-spark_2.12-0.8.4_ExDistAD.jar \
+              --class "fr.inrae.msd.Main" \
+              $MSDQHOME/lib/msddbm-assembly-$VERSION.jar  "$@" -c $MSDQHOME/msdQuery2.conf
+
+
+
+#spark-submit  \
+#              --deploy-mode client \
+#              --driver-memory 2G \
+#              --executor-memory 10G \
+#              --num-executors 1 \
+#              --conf spark.yarn.appMasterEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/" \
+#              --conf spark.executorEnv.JAVA_HOME="/usr/local/openjdk/jdk-12.0.2+10/"  \
+#              --conf spark.yarn.submit.waitAppCompletion="true" \
+#              --jars /usr/share/java/sansa-stack-spark_2.12-0.8.4_ExDistAD.jar \
+#              --files $MSDQHOME/msdQuery2.conf \
+#              --class "fr.inrae.msd.Main" \
+#              $MSDQHOME/lib/msd-query-$VERSION.jar  "$@" -c $MSDQHOME/msdQuery2.conf
+

@@ -1,0 +1,221 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/nlm_mesh_vSHA_4bc58657>
+
+void:classes 16;
+void:classPartition [ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#Term>; 
+void:triples 869536;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#AllowedDescriptorQualifierPair>; 
+void:triples 679888;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#Concept>; 
+void:triples 466976;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Chemical>; 
+void:triples 250445;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#TreeNumber>; 
+void:triples 81732;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Organism>; 
+void:triples 66571;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor>; 
+void:triples 30248;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Disease>; 
+void:triples 6771;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Population>; 
+void:triples 1764;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Protocol>; 
+void:triples 1237;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#DisallowedDescriptorQualifierPair>; 
+void:triples 1041;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#GeographicalDescriptor>; 
+void:triples 401;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#PublicationType>; 
+void:triples 189;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#Qualifier>; 
+void:triples 84;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#SCR_Anatomy>; 
+void:triples 24;
+],[ 
+void:class <http://id.nlm.nih.gov/mesh/vocab#CheckTag>; 
+void:triples 2;
+];
+void:entities  2457002;
+void:distinctSubjects  2456909;
+void:distinctObjects  1429230;
+void:properties 50;
+void:propertyPartition [ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#active>; 
+void:triples 2456909;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 2456909;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#identifier>; 
+void:triples 1694248;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 1578147;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#dateCreated>; 
+void:triples 996866;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#thesaurusID>; 
+void:triples 916022;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#lexicalTag>; 
+void:triples 869536;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#prefLabel>; 
+void:triples 869536;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#preferredTerm>; 
+void:triples 824712;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#hasDescriptor>; 
+void:triples 680929;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#hasQualifier>; 
+void:triples 680929;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#allowableQualifier>; 
+void:triples 628088;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#preferredMappedTo>; 
+void:triples 428906;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#term>; 
+void:triples 396721;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#registryNumber>; 
+void:triples 387312;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#preferredConcept>; 
+void:triples 357736;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#frequency>; 
+void:triples 324911;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#dateRevised>; 
+void:triples 284790;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#source>; 
+void:triples 255072;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#note>; 
+void:triples 218405;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#altLabel>; 
+void:triples 133000;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#concept>; 
+void:triples 111360;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#narrowerConcept>; 
+void:triples 92171;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#lastActiveYear>; 
+void:triples 91031;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#previousIndexing>; 
+void:triples 83407;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#parentTreeNumber>; 
+void:triples 81591;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#treeNumber>; 
+void:triples 64660;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#indexerConsiderAlso>; 
+void:triples 47211;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#relatedRegistryNumber>; 
+void:triples 43964;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor>; 
+void:triples 42114;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#scopeNote>; 
+void:triples 33127;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#dateEstablished>; 
+void:triples 30924;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#historyNote>; 
+void:triples 26913;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#publicMeSHNote>; 
+void:triples 26386;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#casn1_label>; 
+void:triples 22632;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#entryVersion>; 
+void:triples 16273;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#pharmacologicalAction>; 
+void:triples 15707;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#annotation>; 
+void:triples 12674;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#mappedTo>; 
+void:triples 11286;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#seeAlso>; 
+void:triples 9193;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#broaderConcept>; 
+void:triples 8883;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#relatedConcept>; 
+void:triples 8279;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#nlmClassificationNumber>; 
+void:triples 6267;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#sortVersion>; 
+void:triples 3973;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#onlineNote>; 
+void:triples 3050;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#useInstead>; 
+void:triples 1041;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#abbreviation>; 
+void:triples 81;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#broaderQualifier>; 
+void:triples 76;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#considerAlso>; 
+void:triples 67;
+],[ 
+void:property <http://id.nlm.nih.gov/mesh/vocab#Concept>; 
+void:triples 9;
+];
+void:vocabulary  <http://www.w3.org/2000/01/rdf-schema#>, <http://id.nlm.nih.gov/mesh/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://id.nlm.nih.gov/mesh/vocab#>;
+a void:Dataset .

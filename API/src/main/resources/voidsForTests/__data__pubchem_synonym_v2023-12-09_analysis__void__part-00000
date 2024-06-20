@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/pubchem_synonym_v2023-12-09>
+[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000446>; 
+void:triples 4927516;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000561>; 
+void:triples 41989;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000566>; 
+void:triples 28865;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000562>; 
+void:triples 36122;
+], 
+void:entities  267056926;
+void:distinctObjects  55316277;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000109>; 
+void:triples 8464;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000447>; 
+void:triples 100129;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000565>; 
+void:triples 684987;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000406>; 
+void:triples 13575;
+], 
+void:properties 4;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000412>; 
+void:triples 2399743;
+], 
+void:distinctSubjects  211740645;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000339>; 
+void:triples 41621200;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000563>; 
+void:triples 143863;
+], [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 213193445;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000407>; 
+void:triples 154469;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000564>; 
+void:triples 43399;
+], [ 
+void:property <http://semanticscience.org/resource/SIO_000011>; 
+void:triples 98380990;
+], 
+void:classes 16;
+void:propertyPartition 
+void:classPartition [ 
+void:property <http://purl.org/dc/terms/subject>; 
+void:triples 562190;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000409>; 
+void:triples 41103;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000467>; 
+void:triples 161443127;
+], [ 
+void:property <http://semanticscience.org/resource/SIO_000300>; 
+void:triples 213458661;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000382>; 
+void:triples 1504894;
+], 
+void:vocabulary  <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_M01AE17 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_D01AA08 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_V04CJ01 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_D01AE05 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_R01AD07 >, <http://id.nlm.nih.gov/mesh/>, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_B05XB01 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_D04AA16 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_C10AD02 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_J01EB07 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_M02AA05 M01AX05 G02CC03 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_V04CM01 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_G01AF16 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_C02DC01 >, <http://rdf.ncbi.nlm.nih.gov/pubchem/concept/ATC_C05AD05 N01BA02 >;
+a void:Dataset .

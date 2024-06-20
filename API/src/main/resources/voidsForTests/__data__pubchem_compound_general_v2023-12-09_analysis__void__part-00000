@@ -1,0 +1,353 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/pubchem_compound_general_v2023-12-09>
+[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000171059>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006996>; 
+void:triples 14;
+],[ 
+void:property <http://semanticscience.org/resource/CHEMINF_000461>; 
+void:triples 64822125;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000007164>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000178990>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/259664005>; 
+void:triples 42;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/29175007>; 
+void:triples 28;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/83055002>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/70961008>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179045>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96019000>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179674>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/108686006>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96138006>; 
+void:triples 19;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96017003>; 
+void:triples 18;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96020006>; 
+void:triples 18;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84234>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006147>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/53048005>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006276>; 
+void:triples 22;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/73246001>; 
+void:triples 22;
+],
+void:classPartition [ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000007728>; 
+void:triples 11;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64333>; 
+void:triples 11;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000007217>; 
+void:triples 11;
+];
+void:distinctObjects  2693419442;
+void:classes 165481;[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/385580005>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006113>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/427299005>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/412554007>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/82230005>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/72870001>; 
+void:triples 13;
+],
+void:propertyPartition [ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/302007>; 
+void:triples 20;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C839>; 
+void:triples 20;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000170824>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/259337002>; 
+void:triples 16;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C87421>; 
+void:triples 16;
+],[ 
+void:property <http://semanticscience.org/resource/CHEMINF_000455>; 
+void:triples 5814196;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000005870>; 
+void:triples 19;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61796>; 
+void:triples 19;
+],[ 
+void:property <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#has_parent>; 
+void:triples 7019941;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/63084001>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/126235007>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/432555000>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/259509008>; 
+void:triples 22;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/33440000>; 
+void:triples 21;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/12096000>; 
+void:triples 20;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006434>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179358>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006623>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/259512006>; 
+void:triples 27;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/43360005>; 
+void:triples 26;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/34462007>; 
+void:triples 26;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/78219008>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006374>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/47857006>; 
+void:triples 18;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96037004>; 
+void:triples 18;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000010551>; 
+void:triples 17;
+],
+void:entities  2775140730;[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/126115000>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/370399008>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000178971>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179178>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006646>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000168449>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000170348>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/406439009>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179429>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000170771>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/410908003>; 
+void:triples 17;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47634>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000166628>; 
+void:triples 13;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C66227>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/428136009>; 
+void:triples 13;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 174950;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179621>; 
+void:triples 16;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000178969>; 
+void:triples 16;
+],[ 
+void:property <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#is_active_ingredient_of>; 
+void:triples 17167;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/327529002>; 
+void:triples 20;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/286859001>; 
+void:triples 19;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C710>; 
+void:triples 19;
+],[ 
+void:property <http://semanticscience.org/resource/CHEMINF_000462>; 
+void:triples 2933488;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006542>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/412602009>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/329325000>; 
+void:triples 14;
+],[ 
+void:property <http://semanticscience.org/resource/SIO_000008>; 
+void:triples -1637050812;
+];[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000010554>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/74237004>; 
+void:triples 12;
+],[ 
+void:property <http://purl.obolibrary.org/obo/RO_0000087>; 
+void:triples 16500;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C1112>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000178941>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/429803003>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006907>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006798>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000168422>; 
+void:triples 14;
+],[ 
+void:property <http://semanticscience.org/resource/CHEMINF_000480>; 
+void:triples 25037975;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/15660006>; 
+void:triples 13;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47671>; 
+void:triples 13;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C80258>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000178968>; 
+void:triples 13;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/96035007>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/76672009>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000191935>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000007346>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000179796>; 
+void:triples 15;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000006699>; 
+void:triples 15;
+],
+void:distinctSubjects  116110517;
+void:properties 10;[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C818>; 
+void:triples 12;
+],[ 
+void:class <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C73264>; 
+void:triples 12;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000166908>; 
+void:triples 17;
+],[ 
+void:class <http://purl.bioontology.org/ontology/NDFRT/N0000010174>; 
+void:triples 17;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#closeMatch>; 
+void:triples 954300;
+],
+void:vocabulary  <http://purl.bioontology.org/ontology/SNOMEDCT/429453000>, <http://purl.bioontology.org/ontology/SNOMEDCT/65502005>, <http://purl.bioontology.org/ontology/SNOMEDCT/442510005>, <http://purl.bioontology.org/ontology/SNOMEDCT/712715004>, <http://purl.bioontology.org/ontology/SNOMEDCT/68310009>, <http://purl.bioontology.org/ontology/SNOMEDCT/43880002>, <http://purl.bioontology.org/ontology/SNOMEDCT/108482004>, <http://purl.bioontology.org/ontology/SNOMEDCT/66656000>, <http://purl.bioontology.org/ontology/SNOMEDCT/22362000>, <http://purl.bioontology.org/ontology/SNOMEDCT/312177004>, <http://purl.bioontology.org/ontology/SNOMEDCT/126190006>, <http://purl.bioontology.org/ontology/SNOMEDCT/410851000>, <http://purl.bioontology.org/ontology/SNOMEDCT/10616009>, <http://purl.bioontology.org/ontology/SNOMEDCT/256024008>, <http://purl.bioontology.org/ontology/SNOMEDCT/372825006>;[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/418280003>; 
+void:triples 14;
+],[ 
+void:class <http://purl.bioontology.org/ontology/SNOMEDCT/129490002>; 
+void:triples 14;
+],
+a void:Dataset .

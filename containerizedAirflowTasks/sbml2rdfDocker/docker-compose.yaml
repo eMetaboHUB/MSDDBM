@@ -1,0 +1,14 @@
+# docker-compose pour les tests locaux
+services:
+  sbml2rdf:
+    build: .
+    environment:
+
+      HADOOP_USERNAME: "gulaisney"
+      HDFS_INPUT_PATH: "/data/Human-GEM.xml"
+      HDFS_OUTPUT_PATH: "/data/human_gem.ttl"
+      HADOOP_HOST: "http://host.docker.internal:9870"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+

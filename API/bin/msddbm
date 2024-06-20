@@ -1,0 +1,22 @@
+#!/bin/bash
+MSDQHOME=/usr/local/msd-database-management
+MSDQCONF=$MSDQHOME/msdQuery.conf
+VERSION=$(<$MSDQHOME/version)
+
+if [ ! -f "$MSDQHOME/version" ]; then
+    echo "$MSDQHOME/version does not exist. Stopping"
+    exit 1
+fi
+
+if [ ! -f $MSDQCONF ]; then
+    echo "$MSDQCONF does not exist. Stopping"
+    exit 1
+fi
+
+if [ ! -f "$MSDQHOME/lib/msddbm-assembly-$VERSION.jar" ]; then
+    echo "$MSDQHOME/lib/msddbm-assembly-$VERSION.jar does not exist. Stopping"
+    exit 1
+fi
+
+java -jar $MSDQHOME/lib/msddbm-assembly-$VERSION.jar "$@" -c "$MSDQCONF"
+

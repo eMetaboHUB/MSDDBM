@@ -1,0 +1,176 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/sem_chem_v2.0>
+
+void:classes 10;
+void:classPartition [ 
+void:class <http://www.w3.org/2002/07/owl#Class>; 
+void:triples 351;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Restriction>; 
+void:triples 203;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#ObjectProperty>; 
+void:triples 46;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#AnnotationProperty>; 
+void:triples 18;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#DatatypeProperty>; 
+void:triples 6;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#SymmetricProperty>; 
+void:triples 5;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#TransitiveProperty>; 
+void:triples 4;
+],[ 
+void:class <http://www.w3.org/2000/01/rdf-schema#Datatype>; 
+void:triples 2;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Ontology>; 
+void:triples 1;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#FunctionalProperty>; 
+void:triples 1;
+];
+void:entities  633;
+void:distinctSubjects  514;
+void:distinctObjects  210;
+void:properties 41;
+void:propertyPartition [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 637;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subClassOf>; 
+void:triples 364;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 261;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#onProperty>; 
+void:triples 203;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#someValuesFrom>; 
+void:triples 203;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>; 
+void:triples 200;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>; 
+void:triples 200;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000114>; 
+void:triples 120;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/description>; 
+void:triples 113;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#intersectionOf>; 
+void:triples 93;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000115>; 
+void:triples 75;
+],[ 
+void:property <http://www.semanticweb.org/ontologies/cheminf.owl#short_name>; 
+void:triples 50;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasDefinition>; 
+void:triples 39;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasDbXref>; 
+void:triples 39;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#comment>; 
+void:triples 35;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>; 
+void:triples 33;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#domain>; 
+void:triples 29;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#range>; 
+void:triples 27;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000117>; 
+void:triples 21;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000231>; 
+void:triples 21;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>; 
+void:triples 15;
+],[ 
+void:property <http://purl.org/ontology/bibo/doi>; 
+void:triples 12;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#inverseOf>; 
+void:triples 11;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000118>; 
+void:triples 11;
+],[ 
+void:property <http://purl.obolibrary.org/obo/IAO_0000412>; 
+void:triples 10;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#equivalentClass>; 
+void:triples 9;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/contributor>; 
+void:triples 9;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#imports>; 
+void:triples 5;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>; 
+void:triples 3;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>; 
+void:triples 3;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#seeAlso>; 
+void:triples 3;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#propertyChainAxiom>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#unionOf>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#propertyDisjointWith>; 
+void:triples 1;
+],[ 
+void:property <http://www.geneontology.org/formats/oboInOwl#hasSynonym>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#versionInfo>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/title>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/format>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/rights>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#disjointWith>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/language>; 
+void:triples 1;
+];
+void:vocabulary  <http://purl.org/ontology/bibo/>, <http://www.semanticweb.org/ontologies/>, <http://code.google.com/p/information-artifact-ontology/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2002/07/owl#>, <http://purl.org/dc/elements/1.1/>, <http://www.obofoundry.org/ro/ro.owl#>, <http://purl.obolibrary.org/obo#>, <http://www.geneontology.org/formats/oboInOwl#>, <http://purl.obolibrary.org/obo/>, <http://semanticchemistry.github.io/semanticchemistry/ontology/>, <http://purl.org/obo/owl/>, <http://purl.obolibrary.org/obo/iao/>, <http://semanticscience.org/ontology/cheminf.owl#>, <http://www.w3.org/2001/XMLSchema#>;
+a void:Dataset .

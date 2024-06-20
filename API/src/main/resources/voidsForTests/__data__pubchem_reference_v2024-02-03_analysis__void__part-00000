@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/pubchem_reference_v2024-02-03>
+
+void:classes 0;
+void:entities  141750337;
+void:distinctSubjects  40392239;
+void:distinctObjects  101358077;
+void:properties 21;
+void:propertyPartition [ 
+void:property <http://purl.org/spar/fabio/hasSubjectTerm>; 
+void:triples 237040483;
+],[ 
+void:property <http://purl.org/dc/terms/creator>; 
+void:triples 180120546;
+],[ 
+void:property <http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#discussesAsDerivedByTextMining>; 
+void:triples 108247187;
+],[ 
+void:property <http://purl.org/spar/fabio/hasPrimarySubjectTerm>; 
+void:triples 97946821;
+],[ 
+void:property <http://purl.org/dc/terms/isPartOf>; 
+void:triples 95794511;
+],[ 
+void:property <http://purl.org/dc/terms/source>; 
+void:triples 74325823;
+],[ 
+void:property <http://purl.org/dc/terms/identifier>; 
+void:triples 67401170;
+],[ 
+void:property <http://purl.org/spar/cito/discusses>; 
+void:triples 62000844;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/issn>; 
+void:triples 55706818;
+],[ 
+void:property <http://purl.org/dc/terms/language>; 
+void:triples 40392239;
+],[ 
+void:property <http://purl.org/dc/terms/title>; 
+void:triples 40387605;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/contentType>; 
+void:triples 40128503;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/publicationName>; 
+void:triples 40049934;
+],[ 
+void:property <http://purl.org/dc/terms/bibliographicCitation>; 
+void:triples 40044017;
+],[ 
+void:property <http://purl.org/dc/terms/date>; 
+void:triples 39979752;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/startingPage>; 
+void:triples 39594765;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/pageRange>; 
+void:triples 39594765;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/issueIdentifier>; 
+void:triples 34864096;
+],[ 
+void:property <http://prismstandard.org/namespaces/basic/3.0/endingPage>; 
+void:triples 34268700;
+],[ 
+void:property <http://purl.org/cerif/frapo/hasFundingAgency>; 
+void:triples 16950131;
+],[ 
+void:property <http://purl.org/cerif/frapo/isSupportedBy>; 
+void:triples 9637370;
+];
+void:vocabulary  <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/23018690>, <https://pubmed.ncbi.nlm.nih.gov/11876314>, <https://pubmed.ncbi.nlm.nih.gov/19268726>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/27387927>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/11668333>, <https://pubmed.ncbi.nlm.nih.gov/4514409>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/22271870>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/15124130>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/10491592>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/10807291>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/23142092>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/23344604>, <https://pubmed.ncbi.nlm.nih.gov/23735806>, <http://rdf.ncbi.nlm.nih.gov/pubchem/reference/21420931>, <https://pubmed.ncbi.nlm.nih.gov/28500470>;
+a void:Dataset .

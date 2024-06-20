@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/pubchem_descriptor_compound_general_v2023-12-09>
+
+void:distinctSubjects  2657916484;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000391>; 
+void:triples 683914;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000395>; 
+void:triples 103739762;
+], [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples -1637050812;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000337>; 
+void:triples 72589928;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000379>; 
+void:triples 116110189;
+], 
+void:entities  2657916513;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000388>; 
+void:triples 108129672;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000389>; 
+void:triples 77104049;
+], 
+void:vocabulary  <http://purl.obolibrary.org/obo/>, <http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/>, <http://semanticscience.org/resource/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns#>;
+void:propertyPartition [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000338>; 
+void:triples 116110189;
+], 
+void:classPartition [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000390>; 
+void:triples 116110189;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000335>; 
+void:triples 78925706;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000370>; 
+void:triples 116110189;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000375>; 
+void:triples 105470672;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000392>; 
+void:triples 116110189;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000376>; 
+void:triples 106768551;
+], [ 
+void:property <http://semanticscience.org/resource/SIO_000300>; 
+void:triples -1637050812;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000336>; 
+void:triples 116110189;
+], 
+void:classes 24;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000382>; 
+void:triples 88326097;
+], 
+void:distinctObjects  26;
+void:properties 3;[ 
+void:class <http://semanticscience.org/resource/CHEMINF_000334>; 
+void:triples 103347300;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000396>; 
+void:triples 68531130;
+], [ 
+void:property <http://semanticscience.org/resource/SIO_000221>; 
+void:triples 464440756;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000369>; 
+void:triples 116110189;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000373>; 
+void:triples 103956167;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000371>; 
+void:triples 116110189;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000372>; 
+void:triples 94238021;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000387>; 
+void:triples 90118900;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000374>; 
+void:triples 104748614;
+], [ 
+void:class <http://semanticscience.org/resource/CHEMINF_000140>; 
+void:triples 116110189;
+], 
+a void:Dataset .

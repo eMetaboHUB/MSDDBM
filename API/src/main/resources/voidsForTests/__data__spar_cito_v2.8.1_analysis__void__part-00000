@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/spar_cito_v2.8.1>
+
+void:classes 9;
+void:classPartition [ 
+void:class <http://www.w3.org/2002/07/owl#ObjectProperty>; 
+void:triples 98;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Class>; 
+void:triples 10;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#AnnotationProperty>; 
+void:triples 10;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Restriction>; 
+void:triples 4;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#SymmetricProperty>; 
+void:triples 3;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#DatatypeProperty>; 
+void:triples 3;
+],[ 
+void:class <http://www.w3.org/2000/01/rdf-schema#Datatype>; 
+void:triples 1;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Ontology>; 
+void:triples 1;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#FunctionalProperty>; 
+void:triples 1;
+];
+void:entities  154;
+void:distinctSubjects  122;
+void:distinctObjects  71;
+void:properties 26;
+void:propertyPartition [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 131;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#comment>; 
+void:triples 109;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 108;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>; 
+void:triples 91;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/description>; 
+void:triples 51;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#inverseOf>; 
+void:triples 43;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subClassOf>; 
+void:triples 9;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#onProperty>; 
+void:triples 4;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>; 
+void:triples 4;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>; 
+void:triples 4;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#cardinality>; 
+void:triples 3;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#domain>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#range>; 
+void:triples 2;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/contributor>; 
+void:triples 2;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/creator>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#qualifiedCardinality>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/date>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#priorVersion>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#versionInfo>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#imports>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#onDataRange>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/title>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#intersectionOf>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/elements/1.1/rights>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#versionIRI>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#equivalentClass>; 
+void:triples 1;
+];
+void:vocabulary  <http://purl.org/spar/>, <http://www.ontologydesignpatterns.org/cp/owl/>, <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://purl.org/spar/cito/2018-02-12>, <http://purl.org/spar/cito/>, <http://www.w3.org/2002/07/owl#>, <http://purl.org/dc/elements/1.1/>, <http://purl.org/swan/2.0/discourse-relationships/>, <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#>, <http://purl.org/spar/cito/2018-02-16>, <http://schema.org/>, <http://www.w3.org/2001/XMLSchema#>, <http://www.w3.org/2000/01/rdf-schema#>;
+a void:Dataset .

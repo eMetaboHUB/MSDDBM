@@ -1,0 +1,254 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/metanetx_v4.4>
+
+void:classes 12;
+void:classPartition [ 
+void:class <https://rdf.metanetx.org/schema/CHEM>; 
+void:triples 1346530;
+],[ 
+void:class <https://rdf.metanetx.org/schema/GPR>; 
+void:triples 192382;
+],[ 
+void:class <https://rdf.metanetx.org/schema/REAC>; 
+void:triples 179915;
+],[ 
+void:class <https://rdf.metanetx.org/schema/CPLX>; 
+void:triples 92328;
+],[ 
+void:class <https://rdf.metanetx.org/schema/PART>; 
+void:triples 90012;
+],[ 
+void:class <https://rdf.metanetx.org/schema/CATA>; 
+void:triples 72065;
+],[ 
+void:class <https://rdf.metanetx.org/schema/PEPT>; 
+void:triples 71354;
+],[ 
+void:class <https://rdf.metanetx.org/schema/MNET>; 
+void:triples 240;
+],[ 
+void:class <https://rdf.metanetx.org/schema/COMP>; 
+void:triples 51;
+],[ 
+void:class <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>; 
+void:triples 48;
+],[ 
+void:class <http://www.w3.org/2000/01/rdf-schema#Class>; 
+void:triples 9;
+],[ 
+void:class <http://www.w3.org/1999/02/22-rdf-syntax-ns#Propert>; 
+void:triples 1;
+];
+void:entities  5035080;
+void:distinctSubjects  4969371;
+void:distinctObjects  3689994;
+void:properties 65;
+void:propertyPartition [ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 5336378;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#comment>; 
+void:triples 5056406;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemXref>; 
+void:triples 2996504;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 2044935;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemInMNXref>; 
+void:triples 1346525;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemRefer>; 
+void:triples 1292154;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemSource>; 
+void:triples 1292154;
+],[ 
+void:property <https://rdf.metanetx.org/schema/formula>; 
+void:triples 1252223;
+],[ 
+void:property <https://rdf.metanetx.org/schema/smiles>; 
+void:triples 1248094;
+],[ 
+void:property <https://rdf.metanetx.org/schema/charge>; 
+void:triples 1239744;
+],[ 
+void:property <https://rdf.metanetx.org/schema/mass>; 
+void:triples 1049588;
+],[ 
+void:property <https://rdf.metanetx.org/schema/inchi>; 
+void:triples 1049424;
+],[ 
+void:property <https://rdf.metanetx.org/schema/inchikey>; 
+void:triples 1049424;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacXref>; 
+void:triples 384798;
+],[ 
+void:property <https://rdf.metanetx.org/schema/left>; 
+void:triples 267939;
+],[ 
+void:property <https://rdf.metanetx.org/schema/right>; 
+void:triples 249139;
+],[ 
+void:property <https://rdf.metanetx.org/schema/cata>; 
+void:triples 192382;
+],[ 
+void:property <https://rdf.metanetx.org/schema/gpr>; 
+void:triples 192382;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reac>; 
+void:triples 192382;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacInMNXref>; 
+void:triples 179915;
+],[ 
+void:property <https://rdf.metanetx.org/schema/subu>; 
+void:triples 176644;
+],[ 
+void:property <https://rdf.metanetx.org/schema/cplx>; 
+void:triples 154213;
+],[ 
+void:property <https://rdf.metanetx.org/schema/geneName>; 
+void:triples 144331;
+],[ 
+void:property <https://rdf.metanetx.org/schema/pept>; 
+void:triples 132498;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#deprecated>; 
+void:triples 115394;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chem>; 
+void:triples 90012;
+],[ 
+void:property <https://rdf.metanetx.org/schema/coef>; 
+void:triples 90012;
+],[ 
+void:property <https://rdf.metanetx.org/schema/comp>; 
+void:triples 90012;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemReplacedBy>; 
+void:triples 77703;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacRefer>; 
+void:triples 74613;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacSource>; 
+void:triples 74613;
+],[ 
+void:property <https://rdf.metanetx.org/schema/isTransport>; 
+void:triples 74613;
+],[ 
+void:property <https://rdf.metanetx.org/schema/isBalanced>; 
+void:triples 74613;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacReplacedBy>; 
+void:triples 74246;
+],[ 
+void:property <https://rdf.metanetx.org/schema/dir>; 
+void:triples 72065;
+],[ 
+void:property <https://rdf.metanetx.org/schema/ub>; 
+void:triples 72065;
+],[ 
+void:property <https://rdf.metanetx.org/schema/lb>; 
+void:triples 72065;
+],[ 
+void:property <https://rdf.metanetx.org/schema/peptRefer>; 
+void:triples 61820;
+],[ 
+void:property <https://rdf.metanetx.org/schema/peptSource>; 
+void:triples 61820;
+],[ 
+void:property <https://rdf.metanetx.org/schema/peptXref>; 
+void:triples 61820;
+],[ 
+void:property <https://rdf.metanetx.org/schema/classification>; 
+void:triples 39735;
+],[ 
+void:property <https://rdf.metanetx.org/schema/mnxr>; 
+void:triples 28454;
+],[ 
+void:property <https://rdf.metanetx.org/schema/hasIsomericChild>; 
+void:triples 11723;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemIsom>; 
+void:triples 11723;
+],[ 
+void:property <https://rdf.metanetx.org/schema/organism>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/canGrow>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/default_UB>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/taxid>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/default_LB>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/specCount>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/peptCount>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/compCount>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/chemCount>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/reacCount>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/lineage>; 
+void:triples 240;
+],[ 
+void:property <https://rdf.metanetx.org/schema/compXref>; 
+void:triples 209;
+],[ 
+void:property <https://rdf.metanetx.org/schema/compInMNXref>; 
+void:triples 50;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#range>; 
+void:triples 49;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#domain>; 
+void:triples 47;
+],[ 
+void:property <https://rdf.metanetx.org/schema/compSource>; 
+void:triples 44;
+],[ 
+void:property <https://rdf.metanetx.org/schema/compRefer>; 
+void:triples 44;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#seeAlso>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#seeAlso>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#sameAs>; 
+void:triples 1;
+];
+void:vocabulary  <https://www.swisslipids.org/#/entity/SLM:000732316>, <https://identifiers.org/SLM:000550732>, <https://www.swisslipids.org/#/entity/SLM:000443575>, <http://rdf.rhea-db.org/27338>, <https://identifiers.org/rhea:36593>, <https://www.swisslipids.org/#/entity/SLM:000719719>, <https://identifiers.org/SLM:000107905>, <https://www.swisslipids.org/#/entity/SLM:000487153>, <https://www.swisslipids.org/#/entity/SLM:000171589>, <https://www.swisslipids.org/#/entity/SLM:000009574>, <https://identifiers.org/CHEBI:16234>, <https://identifiers.org/CHEBI:78166>, <https://www.swisslipids.org/#/entity/SLM:000763237>, <https://identifiers.org/CHEBI:5489>, <https://identifiers.org/SLM:000586534>;
+a void:Dataset .

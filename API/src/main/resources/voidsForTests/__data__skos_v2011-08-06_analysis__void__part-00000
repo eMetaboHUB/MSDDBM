@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+                    @prefix void: <http://rdfs.org/ns/void#> .
+                    @prefix void-ext: <http://stats.lod2.eu/rdf/void-ext/> .
+                    @prefix qb: <http://purl.org/linked-data/cube#> .
+                    @prefix dcterms: <http://purl.org/dc/terms/> .
+                    @prefix ls-void: <http://stats.lod2.eu/rdf/void/> .
+                    @prefix ls-qb: <http://stats.lod2.eu/rdf/qb/> .
+                    @prefix ls-cr: <http://stats.lod2.eu/rdf/qb/criteria/> .
+                    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+                    @prefix xstats: <http://example.org/XStats#> .
+                    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+                    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<http://stats.lod2.eu/rdf/void/?source=/data/skos_v2011-08-06>
+
+void:classes 9;
+void:classPartition [ 
+void:class <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>; 
+void:triples 28;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#ObjectProperty>; 
+void:triples 17;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#AnnotationProperty>; 
+void:triples 10;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Class>; 
+void:triples 7;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#SymmetricProperty>; 
+void:triples 4;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#TransitiveProperty>; 
+void:triples 3;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#Ontology>; 
+void:triples 1;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#FunctionalProperty>; 
+void:triples 1;
+],[ 
+void:class <http://www.w3.org/2002/07/owl#DatatypeProperty>; 
+void:triples 1;
+];
+void:entities  63;
+void:distinctSubjects  33;
+void:distinctObjects  32;
+void:properties 21;
+void:propertyPartition [ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>; 
+void:triples 72;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#label>; 
+void:triples 32;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>; 
+void:triples 32;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#definition>; 
+void:triples 32;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>; 
+void:triples 24;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#comment>; 
+void:triples 13;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#scopeNote>; 
+void:triples 11;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#inverseOf>; 
+void:triples 8;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#range>; 
+void:triples 6;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#domain>; 
+void:triples 5;
+],[ 
+void:property <http://purl.org/dc/terms/contributor>; 
+void:triples 3;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#disjointWith>; 
+void:triples 3;
+],[ 
+void:property <http://purl.org/dc/terms/creator>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2004/02/skos/core#example>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>; 
+void:triples 2;
+],[ 
+void:property <http://www.w3.org/2002/07/owl#unionOf>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/terms/title>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#seeAlso>; 
+void:triples 1;
+],[ 
+void:property <http://purl.org/dc/terms/description>; 
+void:triples 1;
+],[ 
+void:property <http://www.w3.org/2000/01/rdf-schema#subClassOf>; 
+void:triples 1;
+];
+void:vocabulary  <http://www.w3.org/2004/02/skos/core#>, <http://www.w3.org/1999/02/22-rdf-syntax-ns#>, <http://www.w3.org/2002/07/owl#>, <http://www.w3.org/TR/skos-reference/>, <http://purl.org/dc/terms/>, <http://www.w3.org/2004/02/skos/>, <http://www.w3.org/2000/01/rdf-schema#>;
+a void:Dataset .

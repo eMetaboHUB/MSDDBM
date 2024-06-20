@@ -1,0 +1,21 @@
+#This pipeline runs the Scala library tests and coverage
+stages: # List of stages for jobs, and their order of execution
+  - test
+
+
+unit-test-job:
+  tags: [ docker ]
+  stage: test
+  image: sbtscala/scala-sbt:eclipse-temurin-focal-11.0.22_7_1.9.8_2.12.18
+  #image: sbtscala/scala-sbt:eclipse-temurin-11.0.16_1.7.1_2.12.16
+  script:
+    - echo "Running MSDDBM API tests..."
+    - rm -rf $HOME/.m2/repository
+    - cd API
+    - sbt clean coverage test coverageReport assembly 2>&1 | grep -v "\[INFO\]"
+    - java -jar target/scala-2.12/msddbm-assembly-*.jar -help
+  coverage: '/Statement coverage[A-Za-z\.*]\s*:\s*([^%]+)/' #Statement coverage.: 80.95%
+
+
+
+
